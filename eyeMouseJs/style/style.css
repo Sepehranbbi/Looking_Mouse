@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nerko One', cursive;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(rgb(199, 130, 2) , rgb(255, 123, 0));
+}
+
+.box{
+    display: flex;
+}
+
+.box .eye{
+    padding: 10px;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 20px;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2),
+        inset 0 0 15px red,
+        inset 0 0 15px red;
+}
+
+
+.box .eye::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translate(-50% ,-50%);
+    border-radius: 50%;
+    background-color: #000;
+    width: 40px;
+    height: 40px;
+    border: 5px solid teal;
+    box-sizing: border-box;
+}
+
+
+header{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header .header{
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+header .header small{
+    color: #fff;
+    font-weight: 200;
+    font-size: 25px;
+    letter-spacing: 1px;
+
+}
+
+
+footer{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
